@@ -10,22 +10,22 @@ Although the Docker package is available in the official CentOS 7 repository, it
 <strong>To install Docker on your CentOS 7 server follow the steps below:</strong>
 
 <strong>Update system packages and install the required dependencies:</strong>
-$ sudo yum check-update
-$ sudo yum update
-$ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+<li>$ sudo yum check-update</li>
+<li>$ sudo yum update</li>
+<li>$ sudo yum install -y yum-utils device-mapper-persistent-data lvm2</li>
 
 <strong>add the Docker stable repository:</strong>
-$ sudo yum-config-manager --add-repo  https://download.docker.com/linux/centos/docker-ce.repo
+<li>$ sudo yum-config-manager --add-repo  https://download.docker.com/linux/centos/docker-ce.repo</li>
 
 <strong>Enable Docker repository:</strong>
-$ sudo yum-config-manager --enable docker-ce-edge
+<li>$ sudo yum-config-manager --enable docker-ce-edge</li>
 
 <strong>install the latest version of Docker CE (Community Edition) using yum by typing:</strong>
-$ sudo yum install docker-ce
+<li>$ sudo yum install docker-ce</li>
 
 $ start the Docker daemon and enable it to automatically start at boot time:
-$ sudo systemctl start docker 
-$ sudo systemctl enable docker
+<li>$ sudo systemctl start docker</li>
+<li>$ sudo systemctl enable docker</li>
 
 <strong>verify that the Docker service is running type:</strong>
 $ sudo systemctl status docker
