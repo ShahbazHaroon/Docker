@@ -1,14 +1,14 @@
 # Docker
 Docker Installation
+
 <h2>Introduction</h2>
 <p>Docker is an application that makes it simple and easy to run application processes in a container, which are like virtual machines, only more portable, more resource-friendly, and more dependent on the host operating system.
 Docker is a containerization technology that allows you to quickly build, test and deploy applications as portable, self-sufficient containers that can virtually run everywhere.
 Docker vastly changed many software development and operations paradigms all at once. The ways we architect, develop, ship, and run software before and after Docker are vastly different. Although Docker does not prescribe a certain recipe, it forces people to think in terms of microservices and immutable infrastructure.
+
 <h2>Install Docker on CentOS</h2>
-Although the Docker package is available in the official CentOS 7 repository, it may not always be the latest version. The recommended approach is to install Docker from the Docker’s repositories.</p>
-
-<strong>To install Docker on your CentOS 7 server follow the steps below:</strong>
-
+Although the Docker package is available in the official CentOS 7 repository, it may not always be the latest version. The recommended approach is to install Docker from the Docker’s repositories.
+To install Docker on your CentOS 7 server follow the steps below:</p>
 <strong>Update system packages and install the required dependencies:</strong>
 <li>$ sudo yum check-update</li>
 <li>$ sudo yum update</li>
