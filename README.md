@@ -274,3 +274,76 @@ enter in to the container
 docker exec -it (image ID) bash
 
 docker logs -f (image ID)
+
+
+<table>
+  <tbody>
+    <tr>
+      <th>Commands</th>
+      <th>Description</th>
+	  <th>Sample Commands</th>
+    </tr>
+    <tr><td>docker</td><td>List Of All Available Commands</td><td></td></tr>
+	<tr><td>attach</td><td>Attach To A Running Container</td><td></td></tr>
+	<tr><td>cp</td><td>Copy Files/Folders Between A Container And The Local Filesystem</td><td></td></tr>
+	<tr><td>create</td><td>Create A New Container</td><td></td></tr>
+	<tr><td>diff</td><td>Inspect Changes On A Container'S Filesystem</td><td></td></tr>
+	<tr><td>docker build</td><td>Build An Image From A Dockerfile</td><td></td></tr>
+	<tr><td>docker build -f</td><td>Build An Image From A Dockerfile</td><td>docker build -f Dockerfile -t "IMAGE NAME" .</td></tr>
+	<tr><td>docker commit</td><td>Create A New Image From A Container's Changes</td><td></td></tr>
+	<tr><td>docker commit -a</td><td>Image Author Name</td><td>docker commit -a "AUTHOR NAME"</td></tr>
+	<tr><td>docker commit -m</td><td>Image Message</td><td>docker commit -m "IMAGE MESSAGE" (What did you do to the image)</td></tr>
+  
+  <tr><td colspan=3><strong>docker commit -m "What did you do to the image" -a "Author Name" "CONTAINER ID" "REPOSITORY"/"NEW IMAGE NAME"</strong></td></tr>
+  
+  <tr><td>docker container ls</td><td>List Of Active Containers</td><td>docker container ls</td></tr>
+	<tr><td>docker container ls -a</td><td>View Both Active And Inactive Containers</td><td>docker container ls -a</td></tr>
+	<tr><td>docker container rm</td><td>Remove One Or More Containers</td><td>docker container rm "CONTAINER NAME"</td></tr>
+	<tr><td>docker exec</td><td>Run A Command In A Running Container</td><td></td></tr>
+	<tr><td>docker exec -it</td><td>Enter Into A Running Container</td><td>docker exec -it "IMAGE ID" bash</td></tr>
+	<tr><td>docker image ls</td><td>List Of Images</td><td>docker image ls</td></tr>
+	<tr><td>docker images</td><td>List Of Images</td><td>docker images</td></tr>
+	<tr><td>docker image rm</td><td>Delete An Image</td><td>docker image rm "IMAGE NAME"</td></tr>
+	<tr><td>docker rmi</td><td>Remove One Or More Images</td><td></td></tr>
+	<tr><td>docker info</td><td>Display System-Wide Information</td><td></td></tr>
+	<tr><td>docker login</td><td>Log In To A Docker Registry</td><td></td></tr>
+	<tr><td>docker logs</td><td>Fetch The Logs Of A Container</td><td></td></tr>
+	<tr><td>docker logs -f</td><td>Fetch The Logs</td><td>docker logs -f "IMAGE ID"</td></tr>
+	<tr><td>docker ps</td><td>List Of Active Containers</td><td>docker ps</td></tr>
+	<tr><td>docker ps -a</td><td>View Both Active And Inactive Containers</td><td></td></tr>
+	<tr><td>docker ps -l</td><td>View The Latest Container You Created</td><td></td></tr>
+	<tr><td>docker pull</td><td>Pull An Image Or A Repository From A Registry</td><td>docker image pull "IMAGE or a REPOSITORY NAME"</td></tr>
+	<tr><td>docker push</td><td>Push An Image Or A Repository To A Registry</td><td></td></tr>
+	<tr><td>docker run</td><td>Run A Command In A New Container</td><td></td></tr>
+	<tr><td>docker run -d</td><td>Start Docker Image</td><td>docker run -d "IMAGE ID"</td></tr>
+	<tr><td>docker run -it</td><td>"Interactive Container" - Allows To Interact With The Container Via The Command Line</td><td>docker container run -it "IMAGE" /bin/bash</td></tr>
+	<tr><td>docker run -p</td><td>Specify Port Name</td><td>docker run -p 8085:8085</td></tr>
+	<tr><td>docker search</td><td>Search The Docker Hub For Images</td><td>docker search "IMAGE NAME"</td></tr>
+	<tr><td>docker start</td><td>Start Docker Image</td><td>docker start "IMAGE ID"</td></tr>
+	<tr><td>docker stop</td><td>Stop A Running Container</td><td>docker stop "CONTAINER ID"</td></tr>
+	<tr><td>docker -v</td><td>Show The Docker Version Information</td><td></td></tr>
+	<tr><td>docker --version</td><td>Show The Docker Version Information</td><td></td></tr>
+	<tr><td>events</td><td>Get Real Time Events From The Server</td><td></td></tr>
+	<tr><td>export</td><td>Export A Container'S Filesystem As A Tar Archive</td><td></td></tr>
+	<tr><td>history</td><td>Show The History Of An Image</td><td></td></tr>
+	<tr><td>import</td><td>Import The Contents From A Tarball To Create A Filesystem Image</td><td></td></tr>
+	<tr><td>inspect</td><td>Return Low-Level Information On A Container Or Image</td><td></td></tr>
+	<tr><td>kill</td><td>Kill A Running Container</td><td></td></tr>
+	<tr><td>load</td><td>Load An Image From A Tar Archive Or Stdin</td><td></td></tr>
+	<tr><td>logout</td><td>Log Out From A Docker Registry</td><td></td></tr>
+	<tr><td>pause</td><td>Pause All Processes Within A Container</td><td></td></tr>
+	<tr><td>port</td><td>List Of Port Mappings Or A Specific Mapping For The Container</td><td></td></tr>
+	<tr><td>rename</td><td>Rename A Container</td><td></td></tr>
+	<tr><td>restart</td><td>Restart A Container</td><td></td></tr>
+	<tr><td>save</td><td>Save One Or More Images To A Tar Archive</td><td></td></tr>
+	<tr><td>start</td><td>Start One Or More Stopped Containers</td><td></td></tr>
+	<tr><td>stats</td><td>Display A Live Stream Of Container(S) Resource Usage Statistics</td><td></td></tr>
+	<tr><td>tag</td><td>Tag An Image Into A Repository</td><td></td></tr>
+	<tr><td>top</td><td>Display The Running Processes Of A Container</td><td></td></tr>
+	<tr><td>unpause</td><td>Unpause All Processes Within A Container</td><td></td></tr>
+	<tr><td>update</td><td>Update Configuration Of One Or More Containers</td><td></td></tr>
+	<tr><td>wait</td><td>Block Until A Container Stops, Then Print Its Exit Code</td><td></td></tr>
+	<tr><td>network</td><td>Manage Docker Networks</td><td></td></tr>
+	<tr><td>volume</td><td>Manage Docker Volumes</td><td></td></tr>
+  </tbody>
+</table>
